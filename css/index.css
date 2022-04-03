@@ -13,7 +13,14 @@
 .container {
   padding: 5rem 2rem;
   font-family: "monospace", sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
   background-color: #ecf2f8;
+}
+@media (min-width: 45rem) {
+  .container {
+    padding: 7rem;
+  }
 }
 
 .testimonials {
@@ -31,9 +38,81 @@
 
 .row {
   margin: 1rem;
-  padding: 1.5rem;
+  padding: 2.1rem;
   border-radius: 10px;
+}
+
+.row .images {
+  display: flex;
+  align-items: center;
+}
+.row .images img {
+  width: 3rem;
+  border-radius: 50%;
+}
+.row .images h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  padding-left: clamp(12px, 5vw, 15px);
+}
+.row .images span {
+  color: rgba(255, 255, 255, 0.5);
+  display: block;
+}
+
+.item-2 h2,
+.item-5 h2 {
+  font-size: 1.2rem;
+  color: white;
+}
+.item-2 p,
+.item-5 p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.row h2 {
+  margin: 1rem 0;
+}
+
+.item-1 {
   background-color: #7541c8;
+  background-image: url("../assets/images/bg-pattern-quotation.svg");
+  background-size: 16.5vh;
+  background-repeat: no-repeat;
+  background-position: right 17% top 0;
+}
+.item-1 img {
+  border: 3px solid rgba(255, 255, 255, 0.6);
+}
+.item-1 h2 {
+  font-size: 1.2rem;
+  color: white;
+}
+.item-1 p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.item-2 {
+  background-color: #48556a;
+}
+
+.item-3,
+.item-4 {
+  background-color: white;
+}
+.item-3 h2,
+.item-4 h2 {
+  font-size: 1.2rem;
+  color: #48556a;
+}
+.item-3 p,
+.item-4 p {
+  color: #48556a;
+}
+
+.item-5 {
+  background-color: #19212e;
 }
 
 @media (min-width: 45rem) {
@@ -48,22 +127,6 @@
   .item-5 {
     grid-area: 2/2/span 1/span 2;
   }
-}
-.images {
-  display: flex;
-  align-items: center;
-}
-
-img {
-  border-radius: 50%;
-}
-
-h3 {
-  padding-left: 2rem;
-}
-
-span {
-  display: block;
 }
 
 /*# sourceMappingURL=index.css.map */

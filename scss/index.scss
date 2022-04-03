@@ -37,7 +37,12 @@ $fw-600: 600;
 .container {
     padding: 5rem 2rem;
     font-family: $font;
+    font-weight: $fw-500;
+    line-height: 1.2;
     background-color: $light-grayish-blue;
+    @media (min-width: 45rem) {
+        padding: 7rem;
+    }
 }
 
 .testimonials {
@@ -53,9 +58,78 @@ $fw-600: 600;
 
 .row {
     margin: 1rem;
-    padding: 1.5rem;
+    padding: 2.1rem;
     border-radius: 10px;
+}
+
+.row .images {
+    display: flex;
+    align-items: center;
+    img {
+        width: 3rem;
+        border-radius: 50%;
+    }
+    h3 {
+        font-size: 1rem;
+        font-weight: $fw-500;
+        color: $white;
+        padding-left: clamp(12px, 5vw, 15px);
+    }
+    span {
+        color: rgba($white, 0.5);
+        display: block;
+    }
+}
+
+@mixin typography {
+    h2 {
+        font-size: 1.2rem;
+        color: $white;
+    }
+    p {
+        color: rgba($white, 0.7);
+    }
+}
+
+.item-2,
+.item-5 {
+    @include typography;
+}
+
+.row h2 {
+    margin: 1rem 0;
+}
+
+.item-1 {
     background-color: $moderate-violet;
+    background-image: url("../assets/images/bg-pattern-quotation.svg");
+    background-size: 16.5vh;
+    background-repeat: no-repeat;
+    background-position: right 17% top 0;
+    img {
+        border: 3px solid rgba($white, 0.6);
+    }
+    @include typography;
+}
+
+.item-2 {
+    background-color: $very-dark-grayish-blue;
+}
+
+.item-3,
+.item-4 {
+    background-color: $white;
+    h2 {
+        font-size: 1.2rem;
+        color: $very-dark-grayish-blue;
+    }
+    p {
+        color: $very-dark-grayish-blue;
+    }
+}
+
+.item-5 {
+    background-color: $very-dark-blackish-blue;
 }
 
 @media (min-width: 45rem) {
@@ -68,21 +142,4 @@ $fw-600: 600;
     .item-5 {
         grid-area: 2 / 2 / span 1 / span 2;
     }
-}
-
-.images {
-    display: flex;
-    align-items: center;
-}
-
-img {
-    border-radius: 50%;
-}
-
-h3 {
-    padding-left: 2rem;
-}
-
-span {
-    display: block;
 }
