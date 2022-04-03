@@ -32,6 +32,43 @@ sans-serif;
 $fw-500: 500;
 $fw-600: 600;
 
+/*  Mixins  */
+
+
+/*  Mixin for avatar name, img  */
+
+@mixin title-theme($theme: $white) {
+    img {
+        width: 3rem;
+        border-radius: 50%;
+    }
+    h3 {
+        font-size: 1rem;
+        font-weight: $fw-500;
+        color: $theme;
+        padding-left: clamp(12px, 5vw, 15px);
+    }
+    span {
+        color: rgba($theme, 0.5);
+        display: block;
+    }
+}
+
+
+/* mixins for font size, color of reviews  */
+
+@mixin typography($color: $white) {
+    h2 {
+        font-size: 1.2rem;
+        color: $color;
+        margin: 1rem 0;
+    }
+    p {
+        color: rgba($color, 0.7);
+    }
+}
+
+
 /*  Main  */
 
 .container {
@@ -65,42 +102,10 @@ $fw-600: 600;
 .row .images {
     display: flex;
     align-items: center;
-    img {
-        width: 3rem;
-        border-radius: 50%;
-    }
-    h3 {
-        font-size: 1rem;
-        font-weight: $fw-500;
-        color: $white;
-        padding-left: clamp(12px, 5vw, 15px);
-    }
-    span {
-        color: rgba($white, 0.5);
-        display: block;
-    }
-}
-
-@mixin typography {
-    h2 {
-        font-size: 1.2rem;
-        color: $white;
-    }
-    p {
-        color: rgba($white, 0.7);
-    }
-}
-
-.item-2,
-.item-5 {
-    @include typography;
-}
-
-.row h2 {
-    margin: 1rem 0;
 }
 
 .item-1 {
+    @include title-theme;
     background-color: $moderate-violet;
     background-image: url("../assets/images/bg-pattern-quotation.svg");
     background-size: 16.5vh;
@@ -113,23 +118,25 @@ $fw-600: 600;
 }
 
 .item-2 {
+    @include title-theme;
     background-color: $very-dark-grayish-blue;
+    @include typography;
 }
 
 .item-3,
 .item-4 {
+    @include title-theme($theme: $very-dark-blackish-blue);
     background-color: $white;
-    h2 {
-        font-size: 1.2rem;
-        color: $very-dark-grayish-blue;
-    }
-    p {
-        color: $very-dark-grayish-blue;
-    }
+    @include typography($color: $very-dark-blackish-blue);
 }
 
 .item-5 {
+    @include title-theme;
     background-color: $very-dark-blackish-blue;
+    img {
+        border: 3px solid $moderate-violet;
+    }
+    @include typography;
 }
 
 @media (min-width: 45rem) {
