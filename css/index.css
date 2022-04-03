@@ -25,6 +25,7 @@
   .testimonials {
     display: -ms-grid;
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -33,6 +34,36 @@
   padding: 1.5rem;
   border-radius: 10px;
   background-color: #7541c8;
+}
+
+@media (min-width: 45rem) {
+  .item-1 {
+    grid-area: 1/1/span 1/span 2;
+  }
+
+  .item-3 {
+    grid-area: 1/4/span 2/span 1;
+  }
+
+  .item-5 {
+    grid-area: 2/2/span 1/span 2;
+  }
+}
+.images {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  border-radius: 50%;
+}
+
+h3 {
+  padding-left: 2rem;
+}
+
+span {
+  display: block;
 }
 
 /*# sourceMappingURL=index.css.map */
