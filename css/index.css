@@ -16,9 +16,9 @@
 .container {
   padding: 5rem 2rem;
   font-size: 0.8125rem;
-  font-family: "monospace", sans-serif;
+  font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.2;
   background-color: #ecf2f8;
 }
 @media (min-width: 45rem) {
@@ -76,11 +76,12 @@
   border: 3px solid rgba(255, 255, 255, 0.6);
 }
 .item-1 h2 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: white;
   margin: 1rem 0;
 }
 .item-1 p {
+  font-size: 0.94rem;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -102,11 +103,12 @@
   display: block;
 }
 .item-2 h2 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: white;
   margin: 1rem 0;
 }
 .item-2 p {
+  font-size: 0.94rem;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -133,12 +135,13 @@
 }
 .item-3 h2,
 .item-4 h2 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #19212e;
   margin: 1rem 0;
 }
 .item-3 p,
 .item-4 p {
+  font-size: 0.94rem;
   color: rgba(25, 33, 46, 0.7);
 }
 
@@ -163,11 +166,12 @@
   border: 3px solid #7541c8;
 }
 .item-5 h2 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: white;
   margin: 1rem 0;
 }
 .item-5 p {
+  font-size: 0.94rem;
   color: rgba(255, 255, 255, 0.7);
 }
 
