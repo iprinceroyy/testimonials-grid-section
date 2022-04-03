@@ -1,0 +1,38 @@
+/* ==============
+    Colors
+=============== */
+/*  Primary  */
+/*  Neutral  */
+/* ===============
+    Typography
+================ */
+/*  Body Copy  */
+/*  Font  */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+/*  Main  */
+.container {
+  padding: 5rem 2rem;
+  font-family: "monospace", sans-serif;
+  background-color: #ecf2f8;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 45rem) {
+  .testimonials {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+.row {
+  margin: 1rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-color: #7541c8;
+}
+
+/*# sourceMappingURL=index.css.map */
