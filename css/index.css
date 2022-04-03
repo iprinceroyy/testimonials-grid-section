@@ -15,9 +15,10 @@
 /*  Main  */
 .container {
   padding: 5rem 2rem;
+  font-size: 0.8125rem;
   font-family: "monospace", sans-serif;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.5;
   background-color: #ecf2f8;
 }
 @media (min-width: 45rem) {
@@ -41,7 +42,7 @@
 
 .row {
   margin: 1rem;
-  padding: 2.1rem;
+  padding: 2.3rem;
   border-radius: 10px;
 }
 
