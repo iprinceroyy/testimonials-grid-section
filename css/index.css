@@ -14,12 +14,17 @@
 /* mixins for font size, color of reviews  */
 /*  Main  */
 .container {
-  padding: 5rem clamp(2rem, 10vw, 7rem);
+  padding: 5rem 2rem;
   font-size: 0.8125rem;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 500;
   line-height: 1.2;
   background-color: #ecf2f8;
+}
+@media (min-width: 45rem) {
+  .container {
+    padding: 7rem;
+  }
 }
 
 .testimonials {

@@ -73,15 +73,15 @@ $fw-600: 600;
 /*  Main  */
 
 .container {
-    padding: 5rem clamp(2rem, 10vw, 7rem);
+    padding: 5rem 2rem;
     font-size: $f-size;
     font-family: $font;
     font-weight: $fw-500;
     line-height: 1.2;
     background-color: $light-grayish-blue;
-    // @media (min-width: 45rem) {
-    //     padding: 7rem;
-    // }
+    @media (min-width: 45rem) {
+        padding: 7rem;
+    }
 }
 
 .testimonials {
