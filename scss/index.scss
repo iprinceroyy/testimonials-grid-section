@@ -42,7 +42,7 @@ $fw-600: 600;
         width: 3rem;
         border-radius: 50%;
     }
-    h3 {
+    h2 {
         font-size: 1rem;
         font-weight: $fw-500;
         color: $theme;
@@ -58,7 +58,7 @@ $fw-600: 600;
 /* mixins for font size, color of reviews  */
 
 @mixin typography($color: $white) {
-    h2 {
+    h3 {
         font-size: 1.4rem;
         color: $color;
         margin: 1rem 0;
@@ -94,6 +94,10 @@ $fw-600: 600;
         grid-template-columns: repeat(4, 1fr);
         align-items: stretch;
     }
+}
+
+.testimonials h1 {
+    display: none;
 }
 
 .row {

@@ -41,6 +41,10 @@
   }
 }
 
+.testimonials h1 {
+  display: none;
+}
+
 .row {
   margin: 1rem;
   padding: 2.3rem;
@@ -63,7 +67,7 @@
   width: 3rem;
   border-radius: 50%;
 }
-.item-1 h3 {
+.item-1 h2 {
   font-size: 1rem;
   font-weight: 500;
   color: white;
@@ -76,7 +80,7 @@
 .item-1 img {
   border: 3px solid rgba(255, 255, 255, 0.6);
 }
-.item-1 h2 {
+.item-1 h3 {
   font-size: 1.4rem;
   color: white;
   margin: 1rem 0;
@@ -93,7 +97,7 @@
   width: 3rem;
   border-radius: 50%;
 }
-.item-2 h3 {
+.item-2 h2 {
   font-size: 1rem;
   font-weight: 500;
   color: white;
@@ -103,7 +107,7 @@
   color: rgba(255, 255, 255, 0.5);
   display: block;
 }
-.item-2 h2 {
+.item-2 h3 {
   font-size: 1.4rem;
   color: white;
   margin: 1rem 0;
@@ -122,8 +126,8 @@
   width: 3rem;
   border-radius: 50%;
 }
-.item-3 h3,
-.item-4 h3 {
+.item-3 h2,
+.item-4 h2 {
   font-size: 1rem;
   font-weight: 500;
   color: #19212e;
@@ -134,8 +138,8 @@
   color: rgba(25, 33, 46, 0.5);
   display: block;
 }
-.item-3 h2,
-.item-4 h2 {
+.item-3 h3,
+.item-4 h3 {
   font-size: 1.4rem;
   color: #19212e;
   margin: 1rem 0;
@@ -153,7 +157,7 @@
   width: 3rem;
   border-radius: 50%;
 }
-.item-5 h3 {
+.item-5 h2 {
   font-size: 1rem;
   font-weight: 500;
   color: white;
@@ -166,7 +170,7 @@
 .item-5 img {
   border: 3px solid #7541c8;
 }
-.item-5 h2 {
+.item-5 h3 {
   font-size: 1.4rem;
   color: white;
   margin: 1rem 0;
