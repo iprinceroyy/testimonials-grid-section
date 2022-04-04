@@ -9,10 +9,7 @@
 -   [My process](#my-process)
     -   [Built with](#built-with)
     -   [What I learned](#what-i-learned)
-    -   [Continued development](#continued-development)
-    -   [Useful resources](#useful-resources)
 -   [Author](#author)
--   [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -28,8 +25,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Solution URL here](https://your-solution-url.com)
--   Live Site URL: [Live site URL here](https://your-live-site-url.com)
+-   Solution URL: [Solution URL here](https://github.com/iprinceroyy/testimonials-grid-section)
+-   Live Site URL: [Live site URL here](https://testimonials-grid-prince.netlify.app/)
 
 ## My process
 
