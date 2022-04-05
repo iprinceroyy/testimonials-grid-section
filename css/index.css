@@ -120,6 +120,7 @@ h1 {
 .item-3,
 .item-4 {
   background-color: white;
+  box-shadow: 1.5rem 2.9rem 3rem -3rem rgba(25, 33, 46, 0.9);
 }
 .item-3 img,
 .item-4 img {
